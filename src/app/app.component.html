@@ -1,20 +1,20 @@
 <style>
-   header{
-    display: flex;
-    width: 900px;
-    height: 80px;
-    align-items: center;
-    margin: auto;
-    background-color: #F7F7FF;
-   }
+    header {
+        display: flex;
+        width: 900px;
+        height: 80px;
+        align-items: center;
+        margin: auto;
+        background-color: #F7F7FF;
+    }
 
-   header .cabecalho{
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
-    margin: 60px;
-   }
+    header .cabecalho {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        margin: 60px;
+    }
 
     .first-part {
         display: flex;
@@ -37,7 +37,8 @@
         box-shadow: 3px 3px 50px -10px rgba(0, 0, 0, .75);
     }
 
-    #title, .posttitle {
+    #title,
+    .posttitle {
         color: #1b1e23;
     }
 
@@ -115,6 +116,28 @@
 
     .fa-whatsapp {
         margin-top: 11px;
+    }
+
+    /* para mobile*/
+
+    @media(max-width: 992px) {
+        header {
+            max-width: 714px;
+        }
+
+        header .cabecalho {
+            flex-direction: column;
+            align-items: center;
+            align-items: flex-start;
+            margin: 20px;
+        }
+
+        header p {
+            margin-top: -20px;
+        }
+        header h1 p {
+            font-size: small;
+        }
     }
 </style>
 
