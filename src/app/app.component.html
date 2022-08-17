@@ -1,4 +1,9 @@
 <style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
     header {
         display: flex;
         max-width: 900px;
@@ -16,7 +21,9 @@
         margin: 60px;
     }
 
-    header, h1, p {
+    header,
+    h1,
+    p {
         font-family: Verdana;
         color: #1b1e23;
     }
@@ -38,6 +45,7 @@
 
     .photo {
         margin-top: 50px;
+        margin-bottom: 50px;
         border-radius: 50%;
         width: 350px;
         box-shadow: 3px 3px 50px -10px rgba(0, 0, 0, .75);
@@ -51,6 +59,7 @@
     #title {
         font-size: 40px;
         text-transform: capitalize;
+        margin-bottom: 50px;
     }
 
     a {
@@ -87,6 +96,72 @@
         width: 100%;
     }
 
+    .slider {
+        display: block;
+        height: 293px;
+        width: 500px;
+        margin: auto;
+        margin-top: 20px;
+        position: relative;
+    }
+
+    .slider li {
+        list-style: none;
+        position: absolute;
+    }
+
+    .slider img {
+        margin: auto;
+        height: 100%;
+        width: 100%;
+        vertical-align: top;
+        opacity: 0;
+        visibility: hidden;
+
+    }
+
+    .slider input {
+        display: none;
+    }
+
+    .slider label {
+        background-color: #000;
+        border: 1px solid #505050;
+        bottom: 10px;
+        cursor: pointer;
+        display: block;
+        height: 10px;
+        position: absolute;
+        width: 10px;
+        z-index: 10;
+    }
+
+    .slider li:nth-child(1) label {
+        left: 10px;
+    }
+
+    .slider li:nth-child(2) label {
+        left: 40px;
+    }
+
+    .slider li:nth-child(3) label {
+        left: 70px;
+    }
+    .slider li:nth-child(4) label {
+        left: 100px;
+    }
+    .slider li:nth-child(5) label {
+        left: 130px;
+    }
+    .slider li:nth-child(6) label {
+        left: 160px;
+    }
+
+    .slider li input:checked~img {
+        opacity: 1;
+        visibility: visible;
+        z-index: 10;
+    }
 
     .footer {
         display: flex;
@@ -97,14 +172,14 @@
         background: #FFA624;
     }
 
-    .footer a{
+    .footer a {
         color: #1b1e23;
     }
 
-    .footer a:hover{
+    .footer a:hover {
         color: #fff;
     }
-    
+
     .space_around {
         justify-content: space-around;
     }
@@ -131,7 +206,7 @@
         margin-right: 15%;
     }
 
-    .whatsapp-link:hover{
+    .whatsapp-link:hover {
         background-color: #FFA624;
     }
 
@@ -142,9 +217,7 @@
     /* para mobile*/
 
     @media(max-width: 992px) {
-        header {
-            
-        }
+        header {}
 
         header .cabecalho {
             flex-direction: column;
@@ -153,15 +226,21 @@
             margin: 14px;
         }
 
-        header, p {
+        header,
+        p {
             margin-top: -15px;
         }
-        
-        #h1{
+
+        #h1 {
             font-size: 25px;
         }
 
-        .whatsapp-link{
+        .slider {
+        max-height: 193px;
+        max-width: 350px;
+        }
+
+        .whatsapp-link {
             margin-right: 0;
             bottom: 25px;
             right: 20px;
@@ -216,6 +295,42 @@
                 <h3 class="posttitle">Minha formação</h3>
                 <img src="\assets\images\sistemas_info.jpg" alt="Curso de graduação" class="post_image">
             </div>
+        </article>
+        <br>
+        <article class="post">
+            <h3 class="posttitle">Imagens autorais</h3>
+            <ul class="slider">
+                <li>
+                    <input type="radio" id="slide1" name="slide" checked>
+                    <label for="slide1"></label>
+                    <img src="\assets\images\IMG (1).jpg" />
+                </li>
+                <li>
+                    <input type="radio" id="slide2" name="slide">
+                    <label for="slide2"></label>
+                    <img src="\assets\images\IMG (2).jpg" />
+                </li>
+                <li>
+                    <input type="radio" id="slide3" name="slide">
+                    <label for="slide3"></label>
+                    <img src="\assets\images\IMG (3).jpg" />
+                </li>
+                <li>
+                    <input type="radio" id="slide4" name="slide">
+                    <label for="slide4"></label>
+                    <img src="\assets\images\IMG (4).jpg" />
+                </li>
+                <li>
+                    <input type="radio" id="slide5" name="slide">
+                    <label for="slide5"></label>
+                    <img src="\assets\images\IMG (5).jpg" />
+                </li>
+                <li>
+                    <input type="radio" id="slide6" name="slide">
+                    <label for="slide6"></label>
+                    <img src="\assets\images\IMG (6).jpg" />
+                </li>
+            </ul>
         </article>
     </section>
     <footer>
