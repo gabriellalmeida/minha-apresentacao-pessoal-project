@@ -1,152 +1,189 @@
 <style>
-
-.first-part{
+   header{
     display: flex;
+    width: 900px;
+    height: 80px;
     align-items: center;
-    flex-direction: column;
-    justify-content: center;
-}
-
-body{
-    background: #F7F7FF;
-    font-family: Verdana;
-    max-width: 900px;
     margin: auto;
-}
+    background-color: #F7F7FF;
+   }
 
-.photo{
-    margin-top: 50px;
-    border-radius: 50%;
-    width: 350px;
-    box-shadow: 3px 3px 50px -10px rgba(0, 0, 0, .75);
-}
-
-#title, .posttitle{
-    color: #1b1e23;
-}
-
-#title{
-    font-size: 40px;
-    text-transform:capitalize;
-}
-
-a{
-    text-decoration:underline;
-    color: #505050;
-}
-
-.posttitle{
-    font-size: 16px;
-    font-style: normal;
-    margin: 0;
-    margin-bottom: 15px;
-}
-
-.post {
-    background: #fff;
-    padding: 15px;
-    border: 3px solid #122a57;
-    margin-bottom: 15px;
-    border-radius: 15px;
-    border-top-right-radius: 0;
-    border-bottom-left-radius: 0;
-}
-
-.post_content{
-    margin: 0;
-    margin-bottom: 15px;
-    text-transform:none;
-    text-align:justify;
-}
-
-.post_image{
-    margin-bottom: 15px;
-    width: 100%;
-}
-
-
-.footer{
-    
+   header .cabecalho{
     display: flex;
-    margin-top: 20px;
-    margin-bottom: 40px;
-}
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin: 60px;
+   }
 
-.space_around {
-    justify-content: space-around;
-}
+    .first-part {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
 
-.registro {
-    font-size: 12px;
-    text-align: center;
-    margin-bottom: 20px;
-}
+    body {
+        background: #F7F7FF;
+        font-family: Verdana;
+        max-width: 900px;
+        margin: auto;
+    }
 
-.whatsapp-link {
-    position: fixed;
-    width: 50px;
-    height: 50px;
-    bottom: 45px;
-    left: 40px;
-    background-color: #122a57;
-    color: #fff;
-    border-radius: 50px;
-    text-align: center;
-    font-size: 30px;
-    box-shadow: 2px 3px 19px -2px rgba(0, 0, 0, .75);
-    z-index: 3;
-}
+    .photo {
+        margin-top: 50px;
+        border-radius: 50%;
+        width: 350px;
+        box-shadow: 3px 3px 50px -10px rgba(0, 0, 0, .75);
+    }
 
-.fa-whatsapp {
-    margin-top: 11px;
-}
+    #title, .posttitle {
+        color: #1b1e23;
+    }
+
+    #title {
+        font-size: 40px;
+        text-transform: capitalize;
+    }
+
+    a {
+        text-decoration: underline;
+        color: #505050;
+    }
+
+    .posttitle {
+        font-size: 16px;
+        font-style: normal;
+        margin: 0;
+        margin-bottom: 15px;
+    }
+
+    .post {
+        background: #fff;
+        padding: 15px;
+        border: 3px solid #122a57;
+        margin-bottom: 15px;
+        border-radius: 15px;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+
+    .post_content {
+        margin: 0;
+        margin-bottom: 15px;
+        text-transform: none;
+        text-align: justify;
+    }
+
+    .post_image {
+        margin-bottom: 15px;
+        width: 100%;
+    }
+
+
+    .footer {
+
+        display: flex;
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+
+    .space_around {
+        justify-content: space-around;
+    }
+
+    .registro {
+        font-size: 12px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .whatsapp-link {
+        position: fixed;
+        width: 50px;
+        height: 50px;
+        bottom: 45px;
+        left: 40px;
+        background-color: #122a57;
+        color: #fff;
+        border-radius: 50px;
+        text-align: center;
+        font-size: 30px;
+        box-shadow: 2px 3px 19px -2px rgba(0, 0, 0, .75);
+        z-index: 3;
+    }
+
+    .fa-whatsapp {
+        margin-top: 11px;
+    }
 </style>
 
 <!-- Toolbar -->
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>Gabriel Almeida</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
-    </head>
-    <body>
-        <header class="first-part">
-            <p><img src="\assets\images\eu.jpg" alt="Minha foto de rosto" class="photo"></p>
-            <h1 id="title">Gabriel Almeida</h1>
-        </header>
-        <section>
-            <article class="post">
-                <header>
-                    <h3 class="posttitle">Sobre mim</h3>
-                </header>
-                <p class="post_content">
-                    Sou bacharel em Sistemas de Informação e durante a graduação fui membro da Empresa Júnior, atuando como assessor de RH adquirir conhecimentos sobre regimentos de empresas, gerenciamento e seleção de membros. No mesmo período, fui voluntário em um projeto de iniciação científica, estudei sobre Dívida Técnica e desde então, a engenharia de software se tornou uma área do meu interesse. No último ano de graduação atuei como estagiário na universidade, realizando atividades de atendimento ao público e suporte ao usuário. Atualmente, trabalho em home office fornecendo serviços de suporte virtual e operacional ao marketplace PlanteMais.com.<br>
-                    Competente, profissional, boa reação em equipe e aptidão para aprender e manipular tecnologias que venham ser requisitadas.
-                </p>
-            </article>
-            <br>
-            <article class="post">
-                <header>
-                    <h3 class="posttitle">Minha formação</h3>
-                    <img src="\assets\images\sistemas_info.jpg" alt="Curso de graduação" class="post_image">
-                </header>
-            </article>
-        </section>
-        <footer>
-            <div class="footer space_around">
-                <a href="mailto:almeidagabriel016@gmail.com">E-MAIL</a>
-                <a href="https://www.linkedin.com/in/gabriel-almeida-970384175/" target="_blank">LINKEDIN</a>
-                <a href="https://github.com/gabriellalmeida/" target="_blank">GITHUB</a>
-                <a href="https://www.instagram.com/_gabmarqs/" target="_blank">INSTAGRAM</a>
-            </div>
-            <div>
-                <p class="registro">©2022 Bahia created by Almeida G.</p>
-            </div>
-        </footer>
+<header>
+    <div class="cabecalho">
+        <div>
+            <h1>Almeida G.</h1>
+        </div>
+        <div>
+            <p>Bem-vindo! Esta é minha apresentação pessoal</p>
+        </div>
+    </div>
+</header>
+<div>
+    <meta charset="utf-8">
+    <title>Gabriel Almeida</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+</div>
 
-        <a class="whatsapp-link" href="https://api.whatsapp.com/send?phone=5575991053516&text=Ol%C3%A1%2C%20tenho%20interesse%20em%20viajar%20com%20a%20Flex%20Turismo." target="_blank">
-            <i class="fa fa-whatsapp"></i>
-        </a>
-    </body>
+<body>
+    <div class="first-part">
+        <p><img src="\assets\images\eu.jpg" alt="Minha foto de rosto" class="photo"></p>
+        <h1 id="title">Gabriel Almeida</h1>
+    </div>
+    <section>
+        <article class="post">
+            <div>
+                <h3 class="posttitle">Sobre mim</h3>
+            </div>
+            <p class="post_content">
+                Sou bacharel em Sistemas de Informação e durante a graduação fui membro da Empresa Júnior, atuando como
+                assessor de RH adquirir conhecimentos sobre regimentos de empresas, gerenciamento e seleção de membros.
+                No mesmo período, fui voluntário em um projeto de iniciação científica, estudei sobre Dívida Técnica e
+                desde então, a engenharia de software se tornou uma área do meu interesse. No último ano de graduação
+                atuei como estagiário na universidade, realizando atividades de atendimento ao público e suporte ao
+                usuário. Atualmente, trabalho em home office fornecendo serviços de suporte virtual e operacional ao
+                marketplace PlanteMais.com.<br>
+                Competente, profissional, boa reação em equipe e aptidão para aprender e manipular tecnologias que
+                venham ser requisitadas.
+            </p>
+        </article>
+        <br>
+        <article class="post">
+            <div>
+                <h3 class="posttitle">Minha formação</h3>
+                <img src="\assets\images\sistemas_info.jpg" alt="Curso de graduação" class="post_image">
+            </div>
+        </article>
+    </section>
+    <footer>
+        <div class="footer space_around">
+            <a href="mailto:almeidagabriel016@gmail.com">E-MAIL</a>
+            <a href="https://www.linkedin.com/in/gabriel-almeida-970384175/" target="_blank">LINKEDIN</a>
+            <a href="https://github.com/gabriellalmeida/" target="_blank">GITHUB</a>
+            <a href="https://www.instagram.com/_gabmarqs/" target="_blank">INSTAGRAM</a>
+        </div>
+        <div>
+            <p class="registro">©2022 Bahia created by Almeida G.</p>
+        </div>
+    </footer>
+
+    <a class="whatsapp-link"
+        href="https://api.whatsapp.com/send?phone=5575991053516&text=Ol%C3%A1%2C%20tenho%20interesse%20em%20viajar%20com%20a%20Flex%20Turismo."
+        target="_blank">
+        <i class="fa fa-whatsapp"></i>
+    </a>
+</body>
+
 </html>
